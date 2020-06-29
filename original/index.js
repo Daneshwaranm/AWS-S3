@@ -3,6 +3,7 @@ var IM = require('imagemagick');
 var FS = require('fs');
 var compressedJpegFileQuality = 0.80;
 var compressedPngFileQuality = 0.95;
+
 exports.handler = (event, context, callback) => {
     var s3 = new AWS.S3();
     var sourceBucket = "test1222-src";
